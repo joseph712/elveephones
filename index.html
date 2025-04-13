@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial scale = 1.0">
+	<link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<title>Tutorial</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.hear{
+			min-height: 100vh;
+			width: 100%;
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(PG1.jpg);
+		}
+		nav{
+			display: flex;
+			padding: 2% 6%;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.nav-links{
+			flex: 1;
+			text-align: right;
+		}
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		.nav-links ul li a{
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			font-style: italic;
+		}
+		.nav-links ul li ::after{
+			content: '';
+			width:0%;
+			height: 2px;
+			background: salmon;
+			display: block;
+			margin: auto; 
+			transition: 0.5s;
+		}
+		.nav-links ul li:hover::after{
+			width: 100%;
+		}
+		.text-box{
+			width: 90%;
+			color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		h1{
+			font-size: 40px;
+		}
+		.her{
+			display: inline-block;
+			text-decoration: none;
+			color: white;
+			border: 1px solid white;
+			padding: 12px 34px;
+			font-size: 13px;
+			background: transparent;
+			position: relative;
+		}
+		.her:hover{
+			border: 1px salmon;
+			background: salmon;
+			transition: 3s;
+		}
+		nav .fa{
+			display: none;
+		}
+		@media(max-width: 700px){
+			.text-box h1{
+				font-size: 20px;
+			}
+
+			
+			}
+		
+
+		.courses{
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			padding-top: 100px;
+		}
+		h1{
+			font-size: 36px;
+			font-weight: 600;
+		}
+		p{
+			font-size: 14px;
+			padding: 10px;
+		}
+		.row{
+			margin-top: 5%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.test1{
+			flex-basis: 31%;
+			background: skyblue;
+			border-radius: 10px;
+			margin-bottom: 5%;
+			padding: 20px 12px;
+			box-sizing: border-box;
+			transition: 1s;
+		}
+		test1:hover{
+			box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+		}
+		@media(max-width:700px ){
+			.row{
+				flex-direction: column;
+			}
+		}
+		.foot{
+			min-height: 100vh;
+			width: 80%;
+			margin: 100px auto;
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+			text-align: center;
+			padding: 10px 0;
+			position: relative;
+			background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(PG2.jpg);
+		}
+		.foo{
+			min-height: 100vh;
+			width: 80%;
+			margin: 100px auto;
+			background-position: center;
+			background-size: cover;
+			border-radius: 10px;
+			text-align: center;
+			padding: 10px 0;
+			position: relative;
+			background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(PG3.jpg);
+			
+		}
+		.inp{
+			justify-content: center;
+			border: 1px solid;
+			width: 80%;
+			margin: 100px auto;
+			background: 	#CCCCCC;
+			text-align: center;
+			color: white;
+		}
+		input{
+			justify-content: center;
+			border: 1px solid;
+			margin: 10px auto;
+
+		}
+		.i1{
+			width: 30%;
+			height: 30px;
+		}
+		.i2{
+			width: 30%;
+			height: 30px;
+		}
+		.i3{
+			width: 30%;
+			height: 30px;
+		}
+		.i4{
+			width: 50%;
+			height: 70px;
+		}
+		@media(max-width:700px ){
+			.i4{
+				width: 80%;
+			}
+			.i3{
+				width: 80%;
+			}
+			.i2{
+				width: 80%;
+			}
+			.i1{
+				width: 80%;
+			}
+		}
+		button{
+			border-color: skyblue;
+			background: skyblue;
+			width: 60px;
+			height: 30px;
+		}
+		.cr{
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<section class="hear">
+		<nav>
+			<div class = "nav-links">
+				
+
+
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#o">Offers</a></li>
+					<li><a href="#m">Message</a></li>
+					<li><a href="#c">Contact</a></li>
+					
+				</ul>
+			</div>
+			
+
+		</nav>
+		<div class="text-box">
+			<h1>ELVEE DEALS.</h1>
+			<p>All apple phones and the home of rhe best and quality apple accessories</p>
+			
+			<br><a href="about.html" class="her">Know more</a></br>
+			
+			
+		</div>
+	</section>
+		
+	<section class = "courses">
+		<h1 id="o">What we offer</h1>
+		<p>We offer Websites, Apps and Games</p>
+		<div class="row">
+			<div class = "test1">
+				<h1>PHONES</h1>
+				<h3>We sell all types of apple phones ranging from iphone 5s to the latest iphone and you can get all at a very cool, low and afordable prices</h3>
+			</div>
+			<div class = "test1">
+				<h1>ASSECCORIES</h1>
+				<h3>You can get all types of phone accessories like phone charges, phone casses, airpods, and also  other apple products like the apple watch and many more </h3>
+			</div>
+			<div class = "test1">
+				<h1>OTHER SERVICES</h1>
+				<h3>we also offer services for like screen and other part replacement, icloud unlocking, ios update, we also buy, sell, swap and many among other</h3>
+			</div>
+		</div>
+
+	</section>
+
+	<section class ="foot">
+		<div class="text-box">
+			<h1>Thank you for visiting ELVEE APPLE DEALS. We hope to hear from you soon</h1>
+			<a href="#c" class="her">contact</a>
+			<a href="about.html" class="her">Know more</a>
+		</div>
+		
+	</section>
+	   <form action="https://formsubmit.co/josephbandoh941@gmail.com" method="POSt">
+		<section class="inp">
+			<h1 id = "m">Message</h1>
+			<div>
+			  <input type="text" name="name" class="i1" placeholder="Full name">
+		    </div>
+		    <div>
+			  <input type="email" name="email" class="i2" placeholder="Gmail or Phone number">
+		    </div>
+		    <div>
+			  <input type="text" name="ordr" class="i3" placeholder="Location">
+		    </div>
+		    <div>
+			  <input type="text" name="description" class="i4" placeholder="  ITEM or What You Need ">
+		    </div>
+			
+			<button>Submit</button>
+		</section>
+		</form>
+
+
+	<section class ="foo" >
+		<div class="text-box">
+			<h1 id="c">Contact Us</h1>
+			<a href="https://www.instagram.com/elvi_sco1?igsh=dXdhdXM0YnRhbWF5&utm_source=qr" class="her">Instagram</a>
+			<a href="https://wa.me/233536653483" class="her">Whatsapp</a>
+			<a href="mailto: aelvisn34@gmail.com" class="her">Gmail</a>
+		</div>
+		
+	</section>
+ <p class="cr">copyright &copy BANCO INC</p>
+ <h3>You can contact <a href="josephbandoh941@gmail.com" </a> us for a website or mobile apps for all businesses and other reasons</h3>
+</body>
+</html>
